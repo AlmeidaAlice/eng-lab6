@@ -13,6 +13,10 @@ class TestRepeticao(unittest.TestCase):
     caractere = Repeticao()
     self.assertEqual (caractere.caractere_mais_comum(['mamao','caju','mesa','pano','tango','olhar']), ('a', 7))
 
+  def test_caractere_11(self):
+    caractere = Repeticao()
+    self.assertEqual (caractere.caractere_mais_comum(['mamao','caju','mesa','pano','tango','olhaar']), ('a', 8))
+
   def test_caractere_2(self):
     caractere = Repeticao()
     self.assertEqual (caractere.caractere_mais_comum(['caju','caju','caju','caju','caju','c']), ('c', 6))
